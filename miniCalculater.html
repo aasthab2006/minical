@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="first">Enter first num</label>
+    <input type="text" id="first"><br><br>
+  <label for="second">Enter second num</label>
+    <input type="text" id="second"><br><br>
+    <!-- <input type="text" id="output" readonly><br><br> -->
+     <label for="" id="output">0</label><br><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">x</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button>
+
+    <script>
+        
+        function add(){
+            var a=Number(document.getElementById('first').value)
+            var b=Number(document.getElementById('second').value)
+            var c=a+b
+            document.getElementById('output').innerHTML=c
+        }
+        function sub(){
+            var a=document.getElementById("first").value
+            var b=document.getElementById("second").value
+            var c=a-b
+            document.getElementById('output').innerHTML=c
+        }
+        function mul(){
+            var a=document.getElementById('first').value
+            var b=document.getElementById('second').value
+            var c=a*b
+            document.getElementById('output').innerHTML=c
+        }
+        function div(){
+            var a=document.getElementById('first').value
+            var b=document.getElementById('second').value
+            var c=a/b
+            document.getElementById('output').innerHTML=c
+        }
+         function mod(){
+            var a=document.getElementById('first').value
+            var b=document.getElementById('second').value
+            var c=a%b
+            document.getElementById('output').innerHTML=c
+        }
+    </script>
+</body>
+</html>
